@@ -1,0 +1,189 @@
+.box{
+
+
+
+}
+
+
+
+
+
+img.illust{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+div{
+  width: 80%;
+  margin: 0 auto; #この時の０が上下、二番目に書いたものが左右のマージン
+  text-align: center;
+}
+
+
+
+.image img{
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+}
+
+.add-star:before{ content:"♥";color:red
+;}
+
+.form  {
+width: 400px;
+}
+
+
+
+
+
+/* 05.アメリカンな(?)吹き出し */
+
+h1{
+
+  text-align:center;
+
+    position:relative;
+
+    padding:40px 20px;
+
+    font:bold 50px/1.6 Arial, Helvetica, sans-serif;
+
+    color:#FF69B4;
+
+    background:#fff;
+
+    text-shadow:
+
+
+
+        3px 3px 0 #999;
+
+    border-top:#FF69B4 solid 4px;
+
+    border-bottom:#FF69B4 solid 4px;
+
+    background-image: -webkit-gradient(linear, left top, right bottom,
+
+            from(           rgba(255, 255, 255, 0.0)),
+
+            color-stop(0.4, rgba(255, 255, 255, 0.0)),
+
+            color-stop(0.4, rgba(0, 0, 0, 0.1)),
+
+            color-stop(0.6, rgba(0, 0, 0, 0.1)),
+
+            color-stop(0.6, rgba(255, 255, 255, 0.0)),
+
+            to(             rgba(255, 255, 255, 0.0))
+
+            );
+
+    background-image: -webkit-linear-gradient(top -45deg,
+
+            transparent 40%,
+
+            rgba(0, 0, 0, 0.1) 40%,
+
+            rgba(0, 0, 0, 0.1) 60%,
+
+            transparent 60%
+
+            );
+
+    background-image: -moz-linear-gradient(top -45deg,
+
+            transparent 40%,
+
+            rgba(0, 0, 0, 0.1) 40%,
+
+            rgba(0, 0, 0, 0.1) 60%,
+
+            transparent 60%
+
+            );
+
+    background-image: -o-linear-gradient(top -45deg,
+
+            transparent 40%,
+
+            rgba(0, 0, 0, 0.1) 40%,
+
+            rgba(0, 0, 0, 0.1) 60%,
+
+            transparent 60%
+
+            );
+
+    background-image: linear-gradient(to bottom -45deg,
+
+            transparent 40%,
+
+            rgba(0, 0, 0, 0.1) 40%,
+
+            rgba(0, 0, 0, 0.1) 60%,
+
+            transparent 60%
+
+            );
+
+    background-size:4px 4px;
+
+}
+
+h1:before{
+
+    content:" ";
+
+    position:absolute;
+
+    top:100%;
+
+    left:464px;
+
+    width:0;
+
+    height:0;
+
+    border-width:22px;
+
+    border-style:solid;
+
+    border-color:transparent;
+
+    border-top-color:#FF69B4;
+
+}
+
+h1:after{
+
+    content:" ";
+
+    position:absolute;
+
+    top:100%;
+
+    left:468px;
+
+    width:0;
+
+    height:0;
+
+    border-width:18px;
+
+    border-style:solid 4px;
+
+    border-color:transparent;
+
+    border-top-color:#f0f0f0 ;
+
+    z-index:1;
+
+}
+
+
+.add-star{
+   cursor:pointer;
+}

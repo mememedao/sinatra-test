@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <script src="/js/jquery.js"></script>
+  <script src="/js/main.js"></script>
+
+
+
+  <title>FUCK</title>
+</head>
+<body>
+
+  <span style="color:#F7819F"><h1>poxov</h1></span>
+  <center>
+    <span style="color:#A4A4A4">  <%= Time.now %> <br>
+
+
+      <form method="post"id="ex-form"action="/"enctype="multipart/form-data">
+        <textarea name="ex_text"id="ex_text"></textarea>
+        <div class="form">
+          <input type="file" name="file" value="file"> <br><br>
+          <input type="submit" name="submit"value="submit">
+        </form>
+      </div>
+
+
+
+
+        <% @posts.reverse.each do |post| %>
+
+
+        <%= post["text"] %>
+
+
+
+        <div class="item">
+          <div class="image">
+            <img src="/uploads/<%=post['img_file_name'] %>" class="illust">
+          </div>
+          <div class="tools">
+            <span class="add-star" data-post-id="<%=post["id"]%>"id="<%=post["id"]%>">
+              <%=post["star_count"]%>
+            </span>
+          </div>
+        </div>
+         <% end %>
+  
+
+
+
+
+
+
+    </div>
+  </center>
+
+</body>
+</html>
