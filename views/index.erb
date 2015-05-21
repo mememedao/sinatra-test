@@ -9,6 +9,9 @@
 
 
 
+  <link href="http://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet" type="text/css">
+          <link rel="stylesheet" href="css/style.css">
+
   <title>FUCK</title>
 </head>
 <body>
@@ -27,27 +30,35 @@
       </div>
 
 
+      <% @posts.reverse.each do |post| %>
 
 
-        <% @posts.reverse.each do |post| %>
-
-
-        <%= post["text"] %>
+      <%= post["text"] %>
 
 
 
-        <div class="item">
-          <div class="image">
-            <img src="/uploads/<%=post['img_file_name'] %>" class="illust">
-          </div>
-          <div class="tools">
-            <span class="add-star" data-post-id="<%=post["id"]%>"id="<%=post["id"]%>">
-              <%=post["star_count"]%>
-            </span>
-          </div>
+
+      <div class="item">
+        <div class="image">
+          <img src="/uploads/<%=post['img_file_name'] %>" class="illust">
         </div>
-         <% end %>
-  
+        <div class="tools">
+          <span class="add-star" data-post-id="<%=post["id"]%>"id="<%=post["id"]%>">
+            <%=post["star_count"]%>
+          </span>
+
+        </div>
+      </div>
+       <% end %>
+
+
+
+      
+
+
+
+
+
 
 
 
