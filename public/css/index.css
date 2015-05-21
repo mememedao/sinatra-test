@@ -1,11 +1,6 @@
 .box{
 
-
-
 }
-
-
-
 
 
 img.illust{
@@ -14,6 +9,7 @@ img.illust{
   text-align: center;
 }
 
+
 div{
   width: 80%;
   margin: 0 auto; #この時の０が上下、二番目に書いたものが左右のマージン
@@ -21,18 +17,48 @@ div{
 }
 
 
+.item{
+  padding: 20px;
+  width: 500px;
+  min-height: 400px;
+  margin-bottom: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+    background: #FFF;
+}
+
 
 .image img{
+  margin: 30px;
+  height: 100%;
+  display: block;
+  margin-lef: -80px;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
+    border:#DDA0DD solid 4px;
+
 }
 
-.add-star:before{ content:"♥";color:red
-;}
 
-.form  {
-width: 400px;
+.add-star
+{
+  font-size:20px;
+  }
+.add-star:before{
+  content:"♥";
+  color:red;
+  font-size: 20px;
+}
+
+.img-form textarea {
+  border:solid 2px #DDA0DD;
+  -moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+-webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
+box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
 }
 
 
@@ -297,4 +323,28 @@ html, body {
 .quotes article em:before {
     content: '~';
     margin: 0 10px;
+}
+
+
+
+/* サンプル 4
+----------------------------------------------------------- */
+#searchform4 {
+    width: 200px;
+    background: url(/uploads/input4.gif) left top no-repeat;
+    display: block;
+    height: 24px;
+    position: relative;
+}
+#keywords4  {
+    width: 156px;
+    position: absolute;
+    top: 3px;
+    left: 12px;
+    border: 1px solid #FFF;
+}
+#searchBtn4 {
+    position: absolute;
+    top: 3px;
+    left: 174px;
 }

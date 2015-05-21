@@ -16,18 +16,30 @@
 </head>
 <body>
 
+  <dl>
+
+  <dd><form name="searchform4" id="searchform4" method="get" action="#">
+  <input name="keywords4" id="keywords4" value="" type="text" />
+  <input type="image" src="uploads/btn4.gif" alt="検索" name="searchBtn4" id="searchBtn4" />
+  </form></dd>
+  </dl>
+
+
+
   <span style="color:#F7819F"><h1>poxov</h1></span>
   <center>
     <span style="color:#A4A4A4">  <%= Time.now %> <br>
 
-
-      <form method="post"id="ex-form"action="/"enctype="multipart/form-data">
+      <form class="img-form" method="post"id="ex-form"action="/"enctype="multipart/form-data">
         <textarea name="ex_text"id="ex_text"></textarea>
         <div class="form">
           <input type="file" name="file" value="file"> <br><br>
           <input type="submit" name="submit"value="submit">
         </form>
       </div>
+
+
+
 
 
       <% @posts.reverse.each do |post| %>
@@ -40,6 +52,7 @@
 
       <div class="item">
         <div class="image">
+
           <img src="/uploads/<%=post['img_file_name'] %>" class="illust">
         </div>
         <div class="tools">
@@ -53,7 +66,7 @@
 
 
 
-      
+
 
 
 
@@ -66,6 +79,15 @@
 
 
     </div>
+
+    <form method="POST" action="/asp/mailto.asp">
+    宛先<input type="text" name="toaddr" size="50"><br>
+    送信元<input type="text" name="fromaddr" size="60"><br>
+    題名<input type="text" name="subject" size="78"><br>
+    本文<textarea rows="4" name="body" cols="56"></textarea><br>
+    <input type="submit" value="送信する">
+    <input type="hidden" name="nextpage" value="NEXTURL">
+    </form>
   </center>
 
 </body>
